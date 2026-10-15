@@ -17,16 +17,7 @@ The repository contains separate audio and video implementations. Their exact pr
 - Compare the observed results with appropriate reference methods and published research.
 - Investigate implementation requirements for a future FPGA-based system.
 
-## 3. Repository Structure
-
-- `audio/` — audio encryption and decryption implementation.
-- `video/` — video or video-frame encryption and decryption implementation.
-- `results/` — selected experimental results and statistical evaluation.
-- `test_vectors/` — representative input, key-stream, encryption, and decryption examples.
-- `report/` — project documentation and approved supporting material.
-- `requirements.txt` — Python dependencies.
-
-## 4. Methodology
+## 3. Methodology
 
 The implementations use the Lorenz chaotic system to generate deterministic numerical sequences that are transformed into encryption key values according to each implementation's defined procedure.
 
@@ -34,19 +25,19 @@ The generated values are applied to the supported media data using the encryptio
 
 The precise Lorenz parameters, numerical precision, key-generation rules, data representation, and processing sequence are documented alongside the relevant implementation.
 
-## 5. Audio Implementation
+## 4. Audio Implementation
 
 The audio module supports the input formats and sample representations specified by its source code. The current WAV implementation is designed for uncompressed 16-bit PCM audio and supports mono and stereo input.
 
 Input validation, encryption, decryption, and recovery verification should be performed using the instructions provided in `audio/`.
 
-## 6. Video Implementation
+## 5. Video Implementation
 
 The video module follows the frame-processing and encryption workflow implemented in `video/`. Its input requirements, supported formats, frame handling, and output generation are described in that directory.
 
 Video processing results should be interpreted according to the actual implementation and test configuration.
 
-## 7. Experimental Evaluation
+## 6. Experimental Evaluation
 
 The evaluation may include:
 
